@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\wenbl13\Desktop\logan_reg\libs\niftyReg\niftyreg-git\reg-lib\cpu\_reg_maths.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\wenbl13\Desktop\logan_reg\libs\niftyReg\niftyreg-git\reg-lib\cpu\_reg_maths_eigen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\wenbl13\Desktop\logan_reg\libs\niftyReg\niftyreg-git\reg-lib\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{1418F92B-A86E-3947-BB26-AD07A0B66920}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,16 @@
+# CMake generation dependency list for this directory.
+C:/Users/wenbl13/Desktop/cmake-3.26.4-windows-x86_64/share/cmake-3.26/Modules/FindCUDA.cmake
+C:/Users/wenbl13/Desktop/cmake-3.26.4-windows-x86_64/share/cmake-3.26/Modules/FindCUDA/run_nvcc.cmake
+C:/Users/wenbl13/Desktop/cmake-3.26.4-windows-x86_64/share/cmake-3.26/Modules/FindCUDA/select_compute_arch.cmake
+C:/Users/wenbl13/Desktop/cmake-3.26.4-windows-x86_64/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake
+C:/Users/wenbl13/Desktop/cmake-3.26.4-windows-x86_64/share/cmake-3.26/Modules/FindPackageMessage.cmake
+C:/Users/wenbl13/Desktop/logan_reg/libs/niftyReg/niftyreg-git/niftyreg-build/reg-lib/cuda/CMakeFiles/_reg_common_cuda.dir/_reg_common_cuda_generated__reg_common_cuda.cu.obj.cmake.pre-gen
+C:/Users/wenbl13/Desktop/logan_reg/libs/niftyReg/niftyreg-git/niftyreg-build/reg-lib/cuda/CMakeFiles/_reg_common_cuda.dir/_reg_common_cuda_generated__reg_common_cuda.cu.obj.depend
+C:/Users/wenbl13/Desktop/logan_reg/libs/niftyReg/niftyreg-git/niftyreg-build/reg-lib/cuda/CMakeFiles/_reg_cuda_kernels.dir/_reg_cuda_kernels_generated_affineDeformationKernel.cu.obj.cmake.pre-gen
+C:/Users/wenbl13/Desktop/logan_reg/libs/niftyReg/niftyreg-git/niftyreg-build/reg-lib/cuda/CMakeFiles/_reg_cuda_kernels.dir/_reg_cuda_kernels_generated_affineDeformationKernel.cu.obj.depend
+C:/Users/wenbl13/Desktop/logan_reg/libs/niftyReg/niftyreg-git/niftyreg-build/reg-lib/cuda/CMakeFiles/_reg_cuda_kernels.dir/_reg_cuda_kernels_generated_blockMatchingKernel.cu.obj.cmake.pre-gen
+C:/Users/wenbl13/Desktop/logan_reg/libs/niftyReg/niftyreg-git/niftyreg-build/reg-lib/cuda/CMakeFiles/_reg_cuda_kernels.dir/_reg_cuda_kernels_generated_blockMatchingKernel.cu.obj.depend
+C:/Users/wenbl13/Desktop/logan_reg/libs/niftyReg/niftyreg-git/niftyreg-build/reg-lib/cuda/CMakeFiles/_reg_cuda_kernels.dir/_reg_cuda_kernels_generated_resampleKernel.cu.obj.cmake.pre-gen
+C:/Users/wenbl13/Desktop/logan_reg/libs/niftyReg/niftyreg-git/niftyreg-build/reg-lib/cuda/CMakeFiles/_reg_cuda_kernels.dir/_reg_cuda_kernels_generated_resampleKernel.cu.obj.depend
+C:/Users/wenbl13/Desktop/logan_reg/libs/niftyReg/niftyreg-git/reg-lib/cuda/CMakeLists.txt
+C:/Users/wenbl13/Desktop/logan_reg/libs/niftyReg/niftyreg-git/reg-lib/cuda/checkCudaCard.cpp

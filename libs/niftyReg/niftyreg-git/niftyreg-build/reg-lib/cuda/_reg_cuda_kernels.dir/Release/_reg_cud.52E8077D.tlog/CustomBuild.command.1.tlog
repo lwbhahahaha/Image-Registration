@@ -1,0 +1,58 @@
+^C:\USERS\WENBL13\DESKTOP\LOGAN_REG\LIBS\NIFTYREG\NIFTYREG-GIT\REG-LIB\CUDA\AFFINEDEFORMATIONKERNEL.CU
+setlocal
+cd C:\Users\wenbl13\Desktop\logan_reg\libs\niftyReg\niftyreg-git\niftyreg-build\reg-lib\cuda\CMakeFiles\_reg_cuda_kernels.dir
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\wenbl13\Desktop\cmake-3.26.4-windows-x86_64\bin\cmake.exe -E make_directory C:/Users/wenbl13/Desktop/logan_reg/libs/niftyReg/niftyreg-git/niftyreg-build/reg-lib/cuda/CMakeFiles/_reg_cuda_kernels.dir//Release
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\wenbl13\Desktop\cmake-3.26.4-windows-x86_64\bin\cmake.exe -D verbose:BOOL=OFF -D "CCBIN:PATH=C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools/MSVC/14.29.30133/bin/Hostx64/x64" -D build_configuration:STRING=Release -D generated_file:STRING=C:/Users/wenbl13/Desktop/logan_reg/libs/niftyReg/niftyreg-git/niftyreg-build/reg-lib/cuda/CMakeFiles/_reg_cuda_kernels.dir//Release/_reg_cuda_kernels_generated_affineDeformationKernel.cu.obj -D generated_cubin_file:STRING=C:/Users/wenbl13/Desktop/logan_reg/libs/niftyReg/niftyreg-git/niftyreg-build/reg-lib/cuda/CMakeFiles/_reg_cuda_kernels.dir//Release/_reg_cuda_kernels_generated_affineDeformationKernel.cu.obj.cubin.txt -P C:/Users/wenbl13/Desktop/logan_reg/libs/niftyReg/niftyreg-git/niftyreg-build/reg-lib/cuda/CMakeFiles/_reg_cuda_kernels.dir//_reg_cuda_kernels_generated_affineDeformationKernel.cu.obj.Release.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\WENBL13\DESKTOP\LOGAN_REG\LIBS\NIFTYREG\NIFTYREG-GIT\REG-LIB\CUDA\BLOCKMATCHINGKERNEL.CU
+setlocal
+cd C:\Users\wenbl13\Desktop\logan_reg\libs\niftyReg\niftyreg-git\niftyreg-build\reg-lib\cuda\CMakeFiles\_reg_cuda_kernels.dir
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\wenbl13\Desktop\cmake-3.26.4-windows-x86_64\bin\cmake.exe -E make_directory C:/Users/wenbl13/Desktop/logan_reg/libs/niftyReg/niftyreg-git/niftyreg-build/reg-lib/cuda/CMakeFiles/_reg_cuda_kernels.dir//Release
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\wenbl13\Desktop\cmake-3.26.4-windows-x86_64\bin\cmake.exe -D verbose:BOOL=OFF -D "CCBIN:PATH=C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools/MSVC/14.29.30133/bin/Hostx64/x64" -D build_configuration:STRING=Release -D generated_file:STRING=C:/Users/wenbl13/Desktop/logan_reg/libs/niftyReg/niftyreg-git/niftyreg-build/reg-lib/cuda/CMakeFiles/_reg_cuda_kernels.dir//Release/_reg_cuda_kernels_generated_blockMatchingKernel.cu.obj -D generated_cubin_file:STRING=C:/Users/wenbl13/Desktop/logan_reg/libs/niftyReg/niftyreg-git/niftyreg-build/reg-lib/cuda/CMakeFiles/_reg_cuda_kernels.dir//Release/_reg_cuda_kernels_generated_blockMatchingKernel.cu.obj.cubin.txt -P C:/Users/wenbl13/Desktop/logan_reg/libs/niftyReg/niftyreg-git/niftyreg-build/reg-lib/cuda/CMakeFiles/_reg_cuda_kernels.dir//_reg_cuda_kernels_generated_blockMatchingKernel.cu.obj.Release.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\WENBL13\DESKTOP\LOGAN_REG\LIBS\NIFTYREG\NIFTYREG-GIT\REG-LIB\CUDA\RESAMPLEKERNEL.CU
+setlocal
+cd C:\Users\wenbl13\Desktop\logan_reg\libs\niftyReg\niftyreg-git\niftyreg-build\reg-lib\cuda\CMakeFiles\_reg_cuda_kernels.dir
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\wenbl13\Desktop\cmake-3.26.4-windows-x86_64\bin\cmake.exe -E make_directory C:/Users/wenbl13/Desktop/logan_reg/libs/niftyReg/niftyreg-git/niftyreg-build/reg-lib/cuda/CMakeFiles/_reg_cuda_kernels.dir//Release
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\wenbl13\Desktop\cmake-3.26.4-windows-x86_64\bin\cmake.exe -D verbose:BOOL=OFF -D "CCBIN:PATH=C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools/MSVC/14.29.30133/bin/Hostx64/x64" -D build_configuration:STRING=Release -D generated_file:STRING=C:/Users/wenbl13/Desktop/logan_reg/libs/niftyReg/niftyreg-git/niftyreg-build/reg-lib/cuda/CMakeFiles/_reg_cuda_kernels.dir//Release/_reg_cuda_kernels_generated_resampleKernel.cu.obj -D generated_cubin_file:STRING=C:/Users/wenbl13/Desktop/logan_reg/libs/niftyReg/niftyreg-git/niftyreg-build/reg-lib/cuda/CMakeFiles/_reg_cuda_kernels.dir//Release/_reg_cuda_kernels_generated_resampleKernel.cu.obj.cubin.txt -P C:/Users/wenbl13/Desktop/logan_reg/libs/niftyReg/niftyreg-git/niftyreg-build/reg-lib/cuda/CMakeFiles/_reg_cuda_kernels.dir//_reg_cuda_kernels_generated_resampleKernel.cu.obj.Release.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\WENBL13\DESKTOP\LOGAN_REG\LIBS\NIFTYREG\NIFTYREG-GIT\REG-LIB\CUDA\CMAKELISTS.TXT
+setlocal
+C:\Users\wenbl13\Desktop\cmake-3.26.4-windows-x86_64\bin\cmake.exe -SC:/Users/wenbl13/Desktop/logan_reg/libs/niftyReg/niftyreg-git -BC:/Users/wenbl13/Desktop/logan_reg/libs/niftyReg/niftyreg-git/niftyreg-build --check-stamp-file C:/Users/wenbl13/Desktop/logan_reg/libs/niftyReg/niftyreg-git/niftyreg-build/reg-lib/cuda/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

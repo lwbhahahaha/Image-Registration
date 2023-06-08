@@ -1,0 +1,9 @@
+# CMake generation dependency list for this directory.
+C:/Users/wenbl13/Desktop/logan_reg/libs/niftyReg/niftyreg-git/reg-apps/CMakeLists.txt
+C:/Users/wenbl13/Desktop/logan_reg/libs/niftyReg/niftyreg-git/reg-apps/reg_aladin.h.in
+C:/Users/wenbl13/Desktop/logan_reg/libs/niftyReg/niftyreg-git/reg-apps/reg_average.h.in
+C:/Users/wenbl13/Desktop/logan_reg/libs/niftyReg/niftyreg-git/reg-apps/reg_f3d.h.in
+C:/Users/wenbl13/Desktop/logan_reg/libs/niftyReg/niftyreg-git/reg-apps/reg_jacobian.h.in
+C:/Users/wenbl13/Desktop/logan_reg/libs/niftyReg/niftyreg-git/reg-apps/reg_resample.h.in
+C:/Users/wenbl13/Desktop/logan_reg/libs/niftyReg/niftyreg-git/reg-apps/reg_tools.h.in
+C:/Users/wenbl13/Desktop/logan_reg/libs/niftyReg/niftyreg-git/reg-apps/reg_transform.h.in

@@ -1,0 +1,6 @@
+base = '\\polaris\Data4_New\bpziemer\animal_perfusion_data\03_30_16_data';
+base_dirs = [base 'Acq07_Continuous_200mA']
+ref_im = 'nii27';
+
+
+

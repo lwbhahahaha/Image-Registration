@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\wenbl13\Desktop\logan_reg\libs\niftyReg\niftyreg-git\reg-lib\cuda\_reg_cudainfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\wenbl13\Desktop\logan_reg\libs\niftyReg\niftyreg-git\reg-lib\cuda\_reg_cudainfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\wenbl13\Desktop\logan_reg\libs\niftyReg\niftyreg-git\reg-lib\cuda\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{3106DD08-4A31-35FE-8323-E0727F493481}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{1418F92B-A86E-3947-BB26-AD07A0B66920}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

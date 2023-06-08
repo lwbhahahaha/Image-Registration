@@ -1,0 +1,133 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML is auto-generated from an M-file.
+To make changes, update the M-file and republish this document.
+      --><title>C_SelfAdapt_fcm_test</title><meta name="generator" content="MATLAB 7.9"><meta name="date" content="2009-09-29"><meta name="m-file" content="C_SelfAdapt_fcm_test"><style type="text/css">
+
+body {
+  background-color: white;
+  margin:10px;
+}
+
+h1 {
+  color: #990000; 
+  font-size: x-large;
+}
+
+h2 {
+  color: #990000;
+  font-size: medium;
+}
+
+/* Make the text shrink to fit narrow windows, but not stretch too far in 
+wide windows. */ 
+p,h1,h2,div.content div {
+  max-width: 600px;
+  /* Hack for IE6 */
+  width: auto !important; width: 600px;
+}
+
+pre.codeinput {
+  background: #EEEEEE;
+  padding: 10px;
+}
+@media print {
+  pre.codeinput {word-wrap:break-word; width:100%;}
+} 
+
+span.keyword {color: #0000FF}
+span.comment {color: #228B22}
+span.string {color: #A020F0}
+span.untermstring {color: #B20000}
+span.syscmd {color: #B28C00}
+
+pre.codeoutput {
+  color: #666666;
+  padding: 10px;
+}
+
+pre.error {
+  color: red;
+}
+
+p.footer {
+  text-align: right;
+  font-size: xx-small;
+  font-weight: lighter;
+  font-style: italic;
+  color: gray;
+}
+
+  </style></head><body><div class="content"><h2>Contents</h2><div><ul><li><a href="#1">&#28165;&#31354;&#29615;&#22659;&#21464;&#37327;&#21644;&#21629;&#20196;&#31383;</a></li><li><a href="#2">&#20154;&#36896;&#25968;&#25454;</a></li><li><a href="#3">C_SelfAdapt_fcm</a></li></ul></div><h2>&#28165;&#31354;&#29615;&#22659;&#21464;&#37327;&#21644;&#21629;&#20196;&#31383;<a name="1"></a></h2><pre class="codeinput">clear;
+clc;
+</pre><h2>&#20154;&#36896;&#25968;&#25454;<a name="2"></a></h2><pre class="codeinput"><span class="comment">% &#25226;&#24038;&#19979;&#35282;&#30340;&#31867;&#23450;&#20041;&#20026;&#31532;&#19968;&#31867;,&#21491;&#19978;&#35282;&#30340;&#31867;&#23450;&#20041;&#20026;&#31532;&#20108;&#31867;</span>
+<span class="comment">% X=[1 1.5 1.7 1.7 2 2.1 2.2 2.4 2.7 3 5 5.2 5.5 5.8 5.8 6 6.3 6.4 6.5 7</span>
+<span class="comment">%   3 3.5 4.8 4.3 4 4.5 3.2 5.4 3.8 5 7 8.5 7.8 7.2 6.4 8 7.2 5.8 8.7 9];</span>
+<span class="comment">% X = X';</span>
+X = cell(1,2);
+num = 100;
+X{1} = [rand(num,2);(3-2)*rand(num,2)+2];
+X{2} = 3*rand(2*num,2);
+figure;
+hold <span class="string">on</span>;
+title(<span class="string">'&#20154;&#36896;&#25968;&#25454;'</span>);
+plot(X{1}(:,1),X{1}(:,2),<span class="string">'*'</span>);
+</pre><img vspace="5" hspace="5" src="C_SelfAdapt_fcm_test_01.png" alt=""> <h2>C_SelfAdapt_fcm<a name="3"></a></h2><pre class="codeinput">[U,V,L,bestc]=C_SelfAdapt_fcm(X{1});
+L
+bestc
+figure;
+hold <span class="string">on</span>;
+plot(X{1}(:,1),X{1}(:,2),<span class="string">'*'</span>);
+plot(V(1,1),V(1,2),<span class="string">'ro'</span>);
+plot(V(2,1),V(2,2),<span class="string">'go'</span>);
+hold <span class="string">off</span>;
+</pre><pre class="codeoutput">
+L =
+
+  1.0e+003 *
+
+         0    2.2180    1.5248         0
+
+
+bestc =
+
+     2
+
+</pre><img vspace="5" hspace="5" src="C_SelfAdapt_fcm_test_02.png" alt=""> <p class="footer"><br>
+      Published with MATLAB&reg; 7.9<br></p></div><!--
+##### SOURCE BEGIN #####
+%% 清空环境变量和命令窗
+clear;
+clc;
+
+%% 人造数据
+
+% 把左下角的类定义为第一类,右上角的类定义为第二类
+% X=[1 1.5 1.7 1.7 2 2.1 2.2 2.4 2.7 3 5 5.2 5.5 5.8 5.8 6 6.3 6.4 6.5 7
+%   3 3.5 4.8 4.3 4 4.5 3.2 5.4 3.8 5 7 8.5 7.8 7.2 6.4 8 7.2 5.8 8.7 9];
+% X = X';
+X = cell(1,2);
+num = 100;
+X{1} = [rand(num,2);(3-2)*rand(num,2)+2];
+X{2} = 3*rand(2*num,2);
+figure;
+hold on;
+title('人造数据');
+plot(X{1}(:,1),X{1}(:,2),'*');
+
+%% C_SelfAdapt_fcm
+[U,V,L,bestc]=C_SelfAdapt_fcm(X{1});
+L
+bestc
+figure;
+hold on;
+plot(X{1}(:,1),X{1}(:,2),'*');
+plot(V(1,1),V(1,2),'ro');
+plot(V(2,1),V(2,2),'go');
+hold off;
+##### SOURCE END #####
+--></body></html>
