@@ -49,7 +49,7 @@ Click on `Setup.bat`. You will notice two new folders got created in this folder
 # Run Instruction
 To run this program, follow the below steps.
 ## Step 1
-Copy and paste the acquisition that has zero (or almost zero) motion inside the `reference_acq` folder. You should put **ONLY ONE** acquisition here as the reference(master) acquisition. Notice that the performance of this program really depends on how good this reference acquisition is. If this reference acquisition has zero motion, the registered images will likely have zero motion as well.
+Copy and paste the acquisition that has zero (or almost zero) motion inside the `reference_acq` folder. You should put **ONLY ONE** acquisition here as the reference(master) acquisition. **Notice that the performance of this program really depends on how good this reference acquisition is**. If this reference acquisition has zero motion, the registered images will likely have zero motion as well.
 <p align="center">
   <img src=".\libs\readme_files\7.png" />
 </p>
