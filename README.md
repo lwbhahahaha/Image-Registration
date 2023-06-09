@@ -75,7 +75,7 @@ Hit `Run` button to run this matlab code. You should see the following output in
 <p align="center">
   <img src=".\libs\readme_files\11.png" />
 </p>
-Now you should wait until the program to finish.
+Now you should wait for the program to finish.
 
 # Retrive Result
 For example, to retrive the registered images for study `Flow20_acq1`, you should navigate to `with_motion` -> `Flow20_acq1` -> `REGISTERED` -> `reg`. You should see two `****.nii` files. These are the registered images for v1 and v2 in Nifty format. If you don't see these files, contact Wenbo for a solution.
