@@ -5,6 +5,7 @@ The current release of `Nifty Reg` removed the support for GPU. So this project 
 
 **On a PC with the Intel i9-13900k CPU, the average running time to register one acquisition(v1 and v2) is ~800 seconds.**
 
+(Wenbo is still developing part of the code to 1. convert the outputs to DICOM format; 2.align the orientation to match the orignal input images.; This Github repo and README will be updated.)
 # Installation Instruction
 To install this program, follow the below steps.
 
@@ -48,7 +49,7 @@ Click on `Setup.bat`. You will notice two new folders got created in this folder
 # Run Instruction
 To run this program, follow the below steps.
 ## Step 1
-Copy and paste the acquisition that has zero (or almost zero) motion inside the `reference_acq` folder. You should put ONLY ONE acquisition here as the reference(master) acquisition.
+Copy and paste the acquisition that has zero (or almost zero) motion inside the `reference_acq` folder. You should put **ONLY ONE** acquisition here as the reference(master) acquisition. Notice that the performance of this program really depends on how good this reference acquisition is. If this reference acquisition has zero motion, the registered images will likely have zero motion as well.
 <p align="center">
   <img src=".\libs\readme_files\7.png" />
 </p>
@@ -78,5 +79,3 @@ Now you should wait until the program to finish.
 
 # Retrive Result
 For example, to retrive the registered images for study `Flow20_acq1`, you should navigate to `with_motion` -> `Flow20_acq1` -> `REGISTERED` -> `reg`. You should see two `****.nii` files. These are the registered images for v1 and v2 in Nifty format. If you don't see these files, contact Wenbo for a solution.
-
-(Wenbo is still developing part of the code to 1. convert the outputs to DICOM format; 2.align the orientation to match the orignal input images.; This Github repo and README will be updated.)
