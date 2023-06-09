@@ -3,7 +3,7 @@ This repo wraps the [Nifty Reg](http://cmictig.cs.ucl.ac.uk/wiki/index.php/Nifty
 
 The current release of `Nifty Reg` removed the support for GPU. So this project can be run without any CUDA toolkit or Nvidia GPUs.
 
-**On a PC with the Intel 13900k CPU, the average running time to register one acquisition(v1 and v2) is ~800 seconds.**
+**On a PC with the Intel i9-13900k CPU, the average running time to register one acquisition(v1 and v2) is ~800 seconds.**
 
 # Installation Instruction
 To install this program, follow the below steps.
