@@ -1,0 +1,4 @@
+[deps]
+DICOM = "a26e6606-dd52-5f6a-a97f-4f611373d757"
+MAT = "23992714-dd62-5051-b70f-ba57cb901cac"
+NIfTI = "a3a9e032-41b5-5fc4-967a-a6b7a19844d3"
