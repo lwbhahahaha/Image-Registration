@@ -1,8 +1,0 @@
-﻿  _reg_nmi.cpp
-  _reg_ssd.cpp
-  _reg_kld.cpp
-  _reg_lncc.cpp
-  _reg_dti.cpp
-  _reg_mind.cpp
-  Generating Code...
-  _reg_measure.vcxproj -> C:\Users\wenbl13\Desktop\logan_reg\libs\niftyReg\niftyreg-git\niftyreg-build\reg-lib\Release\_reg_measure.lib

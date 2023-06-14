@@ -1,6 +1,0 @@
-﻿  _reg_splineBasis.cpp
-  _reg_localTrans.cpp
-  _reg_localTrans_regul.cpp
-  _reg_localTrans_jac.cpp
-  Generating Code...
-  _reg_localTrans.vcxproj -> C:\Users\wenbl13\Desktop\logan_reg\libs\niftyReg\niftyreg-git\niftyreg-build\reg-lib\Release\_reg_localTrans.lib
