@@ -260,21 +260,25 @@ function crop_and_convert2nifty(with_motion, ref)
 		isdir(ref_dir) || mkdir(ref_dir)
 		with_motion_dir = joinpath(temp_dir, "with_motion")
 	    isdir(with_motion_dir) || mkdir(with_motion_dir)
-
-		up, down, left, right = BB
-		
-		# crop
-		v1_dicom_cropped = v1_dicom[:, up:down, left:right]
-		v2_dicom_cropped = v2_dicom[:, up:down, left:right]
-		ref_v1_dicom_cropped = ref_v1_dicom[:, up:down, left:right]
-		ref_v2_dicom_cropped = ref_v2_dicom[:, up:down, left:right]
-
-		# save
-		niwrite(joinpath(with_motion_dir, "v1.nii"), NIfTI.NIVolume(v1_dicom_cropped))
-		niwrite(joinpath(with_motion_dir, "v2.nii"), NIfTI.NIVolume(v2_dicom_cropped))
-		niwrite(joinpath(ref_dir, "v1.nii"), NIfTI.NIVolume(ref_v1_dicom_cropped))
-		niwrite(joinpath(ref_dir, "v2.nii"), NIfTI.NIVolume(ref_v2_dicom_cropped))
-
+		if BB != nothing
+			up, down, left, right = BB
+			# crop
+			v1_dicom_cropped = v1_dicom[:, up:down, left:right]
+			v2_dicom_cropped = v2_dicom[:, up:down, left:right]
+			ref_v1_dicom_cropped = ref_v1_dicom[:, up:down, left:right]
+			ref_v2_dicom_cropped = ref_v2_dicom[:, up:down, left:right]
+			# save
+			niwrite(joinpath(with_motion_dir, "v1.nii"), NIfTI.NIVolume(v1_dicom_cropped))
+			niwrite(joinpath(with_motion_dir, "v2.nii"), NIfTI.NIVolume(v2_dicom_cropped))
+			niwrite(joinpath(ref_dir, "v1.nii"), NIfTI.NIVolume(ref_v1_dicom_cropped))
+			niwrite(joinpath(ref_dir, "v2.nii"), NIfTI.NIVolume(ref_v2_dicom_cropped))
+		else
+			# save
+			niwrite(joinpath(with_motion_dir, "v1.nii"), NIfTI.NIVolume(v1_dicom))
+			niwrite(joinpath(with_motion_dir, "v2.nii"), NIfTI.NIVolume(v2_dicom))
+			niwrite(joinpath(ref_dir, "v1.nii"), NIfTI.NIVolume(ref_v1_dicom))
+			niwrite(joinpath(ref_dir, "v2.nii"), NIfTI.NIVolume(ref_v2_dicom))
+		end
 		# free memory
 		with_motion[i][4] = nothing 
 		with_motion[i][5] = nothing 
@@ -347,7 +351,7 @@ function postprocess_and_save(with_motion)
 		println("...")
 		temp_path = joinpath("../output", study_name)
 		isdir(temp_path) || mkdir(temp_path)
-		temp = joinpath(temp_path, acq)
+		temp_path = joinpath(temp_path, acq)
 		isdir(temp_path) || mkdir(temp_path)
 
 		
@@ -395,8 +399,8 @@ end
 # ╠═02f7a4c0-0731-11ee-2d14-a3bdb13bfe77
 # ╟─88406ea4-0432-42a2-8941-ebd2e95d7833
 # ╟─7aaec061-33d5-405a-a715-95d84bb54ef6
-# ╠═7ac6631f-9620-436d-8dea-a48783d9af27
+# ╟─7ac6631f-9620-436d-8dea-a48783d9af27
 # ╟─62bd5ffc-b0db-403d-9f9e-06ae848ae0dc
-# ╠═872ca460-4525-48f5-a1d8-2be83633665c
+# ╟─872ca460-4525-48f5-a1d8-2be83633665c
 # ╟─581b8144-1857-446a-94a8-8f58031574e1
-# ╠═159c255c-41a8-4934-9509-00ad380fdc88
+# ╟─159c255c-41a8-4934-9509-00ad380fdc88
