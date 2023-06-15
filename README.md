@@ -1,3 +1,10 @@
+# Table of Contents
+
+1. [Project Overview](#project-overview)
+2. [Installation Instructions](#installation-instructions)
+3. [Running Instructions](#running-instructions)
+4. [Retrieving Results](#retrieving-results)
+
 # Project Overview
 
 This repository serves as a wrapper for the [Nifty Reg](http://cmictig.cs.ucl.ac.uk/wiki/index.php/NiftyReg). We extend our profound gratitude to the original authors from [CMIC](http://cmictig.cs.ucl.ac.uk/wiki/index.php/Main_Page) and Dr.Molloi's Imaging Physics Laboratory at UC Irvine.
@@ -13,12 +20,6 @@ This project functions without the requirement for a GPU, as the current version
 On an average, a PC with an Intel 13900k CPU(16 cores, 32 threads) would require approximately 40 minutes to register one acquisition (v1 and v2).
 
 *Please note, Wenbo is currently working on parts of the code. Updates to this Github repository and the README are to be expected.*
-
-# Table of Contents
-
-1. [Installation Instructions](#installation-instructions)
-2. [Running Instructions](#running-instructions)
-3. [Retrieving Results](#retrieving-results)
 
 # Installation Instructions
 
