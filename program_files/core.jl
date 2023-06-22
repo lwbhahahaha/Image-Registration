@@ -77,7 +77,7 @@ function find_BB(curr_limb_dicom, l; offset = 50)
 	for x = 1 : 512
 		up==nothing || break
 		for slice_idx = 1 : l
-			Threads.@threads for y = 1 : 512
+			for y = 1 : 512
 				curr_limb_dicom[slice_idx, x, y] == -1024 || (up=x;break)
 			end
 			up==nothing || break
@@ -87,7 +87,7 @@ function find_BB(curr_limb_dicom, l; offset = 50)
 	for x = 512 : -1 : 1
 		down==nothing || break
 		for slice_idx = 1 : l
-			Threads.@threads for y = 1 : 512
+			for y = 1 : 512
 				curr_limb_dicom[slice_idx, x, y] == -1024 || (down=x;break)
 			end
 			down==nothing || break
@@ -97,7 +97,7 @@ function find_BB(curr_limb_dicom, l; offset = 50)
 	for y = 1 : 512
 		left==nothing || break
 		for slice_idx = 1 : l
-			Threads.@threads for x = 1 : 512
+			for x = 1 : 512
 				curr_limb_dicom[slice_idx, x, y] == -1024 || (left=y;break)
 			end
 			left==nothing || break
@@ -107,7 +107,7 @@ function find_BB(curr_limb_dicom, l; offset = 50)
 	for y = 512 : -1 : 1
 		right==nothing || break
 		for slice_idx = 1 : l
-			Threads.@threads for x = 1 : 512
+			for x = 1 : 512
 				curr_limb_dicom[slice_idx, x, y] == -1024 || (right=y;break)
 			end
 			right==nothing || break
@@ -361,6 +361,19 @@ function postprocess_and_save(with_motion)
 		v2 = niread(f3d_v2_out_path)
 
 		# correct orientation
+		if BB!=nothing
+			up, down, left, right = BB
+			output_1 = Array{Int16, 3}(undef, num_slice, 512, 512)
+			output_2 = Array{Int16, 3}(undef, num_slice, 512, 512)
+			fill!(output_1, -1024)
+			fill!(output_2, -1024)
+			output_1[:, up:down, left:right] = v1
+			output_2[:, up:down, left:right] = v2
+			v1 = output_1
+			v2 = output_2
+		end
+
+		
 		v1 = permutedims(v1, [3, 2, 1])
 		v2 = permutedims(v2, [3, 2, 1])
 		
